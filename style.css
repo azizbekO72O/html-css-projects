@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mada";
+  text-transform: uppercase;
+  transition: 0.2s linear;
+}
+
+::selection {
+  background-color: #9500ff;
+  color: #fff;
+}
+
+main {
+  padding: 20px 130px 10px 130px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #000;
+}
+
+.menu a:hover {
+  color: #9500ff;
+  transform: translate(0, 5px);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+}
+
+.content h1 {
+  font-size: 62px;
+  font-weight: 400;
+}
+
+.content span {
+  font-weight: 700;
+  border: 2px solid #9500ff;
+  border-radius: 59px;
+  padding: 12px 25px;
+  background: linear-gradient(to right, #9500ff 108px, #cc00ff);
+  color: #fff;
+}
+
+.content p {
+  font-size: 25px;
+  text-transform: lowercase;
+}
+
+.content p::first-letter {
+  text-transform: uppercase;
+}
+
+.content button {
+  padding: 20px 43px;
+  font-size: 52px;
+  font-weight: 700;
+  color: #9500ff;
+  border: 5px solid #9500ff;
+  border-radius: 59px;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.content button:hover {
+  color: #fff;
+  background-color: #9500ff;
+}
+
+.hero img {
+  width: 537px;
+  height: 600px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
