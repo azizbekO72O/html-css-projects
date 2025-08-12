@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+}
+
+body {
+  padding: 20px 140px;
+}
+
+:root {
+  --primary-color: #066f14;
+  --secondary-color: #1a1a1a;
+  --paragraph-color: #4a4a4a;
+}
+
+.navbar,
+.menu,
+.auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  gap: 45px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+
+.navbar .auth {
+  gap: 40px;
+  font-family: "DM Sans";
+}
+
+.auth span {
+  width: 80px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--secondary-color);
+}
+
+.auth :last-child,
+.auth :first-child:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.auth :last-child:hover {
+  color: #bababa;
+}
+
+/* ------------------ HERO ------------- */
+
+.hero {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-family: "Nunito";
+  font-size: 72px;
+  color: var(--secondary-color);
+  width: 545px;
+}
+
+.hero-content p {
+  width: 500px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: var(--paragraph-color);
+  margin: 30px 0;
+}
+
+.hero-content div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero-content button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 31px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: unset;
+  color: var(--secondary-color);
+}
+
+.hero-content img {
+  position: absolute;
+  right: -130px;
+}
+
+.hero-content table {
+  margin-top: 60px;
+  text-align: center;
+  width: 540px;
+}
+
+.hero-content table th {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.hero-content table td {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.hero .hero-img {
+  position: relative;
+}
+
+.hero-img img:not(:first-child) {
+  position: absolute;
+}
+
+.hero-img .hero-arrow1 {
+  top: 174px;
+  left: -43px;
+}
+.hero-img .hero-arrow2 {
+  top: 72px;
+  right: -53px;
+}
+.hero-img .hero-arrow3 {
+  bottom: 72px;
+  right: -40px;
+}
